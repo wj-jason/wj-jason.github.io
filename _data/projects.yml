@@ -1,0 +1,24 @@
+# Research & projects shown on the home page, in this order.
+# writeup: path to a post, e.g. /writing/my-project/ (optional)
+
+- title: "[Paper or project title]"
+  authors: "Jason Wang, [Coauthor], [Advisor]"
+  venue: "[Venue / Workshop], 2026"
+  image: "" # e.g. /assets/img/project1.png (shown at 180×120)
+  links:
+    - name: paper
+      url: "#"
+    - name: code
+      url: "#"
+  summary: "[One sentence: what you did and what you found.]"
+
+- title: "[Project title]"
+  authors: "Jason Wang, [Collaborator]"
+  venue: "Course project, [Course name], 2025"
+  image: ""
+  links:
+    - name: report
+      url: "#"
+    - name: code
+      url: "#"
+  summary: "[One sentence summary.]"

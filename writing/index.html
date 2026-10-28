@@ -1,0 +1,27 @@
+---
+layout: default
+title: Writing
+---
+<main class="container writing">
+  <a class="back" href="{{ '/' | relative_url }}">← {{ site.author.name }}</a>
+  <header>
+    <h1>Writing</h1>
+    <p class="lede">Longer write-ups of projects</p>
+  </header>
+
+  {% if site.posts.size == 0 %}
+    <p class="empty">Nothing here yet.</p>
+  {% else %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <span class="date">{{ post.date | date: "%b %Y" }}</span>
+        <div>
+          <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% if post.summary %}<span class="summary">{{ post.summary }}</span>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</main>

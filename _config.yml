@@ -1,0 +1,39 @@
+title: "Jason Wang"
+description: "3rd Year Electrical and Computer Engineering Student"
+url: "" 
+baseurl: ""
+
+author:
+  name: "Jason Wang"
+  email: "jjh.wang@mail.utoronto.ca"
+  photo: "" 
+  cv: "/assets/cv.pdf"
+  scholar: "" 
+  github: "https://github.com/wj-jason"
+  linkedin: "https://www.linkedin.com/in/jason-jh-wang/"
+
+permalink: /writing/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - writing # remove this line to bring back the Writing page
